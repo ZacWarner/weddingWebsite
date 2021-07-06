@@ -1,17 +1,17 @@
 require('dotenv').config();
-const express = require("express");
+
 const path = require("path");
 const mongoose = require('mongoose');
+const User = require('./models/User');
+const express = require("express");
 const passport = require('passport');
 const PORT = process.env.PORT || 3001;
 const app = express();
 
-const api = require('./routes/api');
+const api = require('./routes');
 
 
 const options = {
-  user: process.env.MONGO_LOGIN,
-  pass: process.env.MONGO_PSW,
   keepAlive: true,
   keepAliveInitialDelay: 300000,
 };
@@ -32,6 +32,9 @@ app.use(passport.initialize());
 
 // Passport config
 require('./config/passport')();
+
+// API Middleware
+app.use('/api', api);
 
 // Serve up static assets (usually on heroku)
 if (process.env.NODE_ENV === "production") {
