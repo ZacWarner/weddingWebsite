@@ -7,6 +7,6 @@ const login = require('./login');
 
 router.post('/login', login);
 
-router.post('/register', register);
+// router.post('/register', register);
 
 module.exports = router;
