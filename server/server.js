@@ -23,7 +23,7 @@ mongoose.set('useNewUrlParser', true);
 
 // Connect to MongoDB
 mongoose
-  .connect(process.env.MONGO_URI, options)
+  .connect(process.env.ATLAS_URI, options)
   .then(() => console.log('MongoDB successfully connected'))
   .catch((err) => console.log(err));
 
