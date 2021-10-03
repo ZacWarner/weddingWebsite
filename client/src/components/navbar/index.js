@@ -7,6 +7,7 @@ import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import styles from './styles';
+import { Grid } from '@material-ui/core'
 
 const useStyles = makeStyles(styles);
 
@@ -15,13 +16,19 @@ export default function NavBar() {
 
     return (
         <div className={classes.root}>
-            <AppBar position="static" color='transparent'>
+            <AppBar position="fixed" color='transparent'>
                 <Toolbar>
-                    <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
-                        <MenuIcon />
-                    </IconButton>
+                    <Grid justifyContent='space-between' container>
+                        <Grid className={classes.helpCenter} item>
+                        </Grid>
+                        <Grid item>
+                            <Typography align='center' variant='h5'>Z & L</Typography>
+                        </Grid>
 
-                    <Button color="inherit">Login</Button>
+                        <Grid item>
+                            <Button color="inherit">Login</Button>
+                        </Grid>
+                    </Grid>
                 </Toolbar>
             </AppBar>
         </div>
