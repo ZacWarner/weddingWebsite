@@ -3,7 +3,8 @@ import React from 'react';
 import {
     Grid,
     makeStyles,
-    Typography
+    Typography,
+    Hidden
 } from '@material-ui/core';
 
 import styles from './styles';
@@ -17,8 +18,16 @@ const FrontPage = () => {
         <Grid container>
             <Grid container className={classes.heroContainer} justifyContent='center' alignItems='center' item xs={12}>
                 <Grid item xs={12}>
-                    <Typography align='center' className={classes.heroText} variant='h1'>Zac And Lisa </Typography>
+                    <Hidden smDown>
+                        <Typography align='center' className={classes.heroText} variant='h1'>Zac And Lisa </Typography>
+                    </Hidden>
+                    <Hidden mdUp>
+                        <Typography align='center' className={classes.heroText} variant='h1'>Zac</Typography>
+                        <Typography align='center' className={classes.heroText} variant='h1'>And</Typography>
+                        <Typography align='center' className={classes.heroText} variant='h1'>Lisa</Typography>
+                    </Hidden>
                     <Typography align='center' className={classes.heroText} variant='h2'>Are Getting Married! </Typography>
+
                     <hr className={classes.break} />
                     <Typography align='center' className={classes.heroText} variant='h4'>10-29-2022</Typography>
                     <Typography align='center' className={classes.heroText} variant='h4'>Sterling Hotel</Typography>
