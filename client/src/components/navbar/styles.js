@@ -12,6 +12,12 @@ export default (theme) => ({
     },
     helpCenter: {
         width: '64px'
+    },
+    navLink: {
+        textDecoration: 'none',
+    },
+    button: {
+        color: 'white'
     }
 })
 

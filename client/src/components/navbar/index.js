@@ -8,6 +8,7 @@ import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import styles from './styles';
 import { Grid } from '@material-ui/core'
+import {NavLink} from 'react-router-dom';
 
 const useStyles = makeStyles(styles);
 
@@ -19,13 +20,13 @@ export default function NavBar() {
             <AppBar position="fixed" color='transparent'>
                 <Toolbar>
                     <Grid justifyContent='space-between' container>
-                        <Grid className={classes.helpCenter} item>
-                        </Grid>
+                       
                         <Grid item>
-                            <Typography align='center' variant='h5'>Z & L</Typography>
+                           <NavLink to='/' className={classes.navLink}><Typography className={classes.button} align='center' variant='h5'>Z & L</Typography></NavLink> 
                         </Grid>
 
                         <Grid item>
+                            <NavLink className={classes.navLink} to='/information'><Button className={classes.button}>Information</Button></NavLink>
                             <Button color="inherit">Login</Button>
                         </Grid>
                     </Grid>
