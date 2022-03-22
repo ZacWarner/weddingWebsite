@@ -16,11 +16,12 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@testing-library/react": "^12.1.1",
-    "nodemon": "^1.18.7",
-    "react-test-renderer": "^17.0.2"
+ 
   },
   "dependencies": {
+    "@testing-library/react": "^12.1.1",
+    "nodemon": "^1.18.7",
+    "react-test-renderer": "^17.0.2",
     "@emotion/react": "^11.4.1",
     "@emotion/styled": "^11.3.0",
     "@mui/material": "^5.0.2",
