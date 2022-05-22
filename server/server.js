@@ -5,7 +5,7 @@ const mongoose = require('mongoose');
 const User = require('./models/User');
 const express = require("express");
 const passport = require('passport');
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 3001;
 const app = express();
 
 const api = require('./routes');
