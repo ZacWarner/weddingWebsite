@@ -31,7 +31,6 @@ const Information = () => {
                 <Grid item className={classes.hotelItem}>
                     <Typography align='center' variant="h4">The Sheraton Grand Sacramento Hotel</Typography>
                     <Typography align='center' variant='body1'>Right down the street, 5 minute walk</Typography>
-                    <Typography align='center' variant="body1">Call 1-916-813-7951 reference #M-LQCTJPP</Typography>
                     <a className={classes.anchorTag} href="https://www.marriott.com/event-reservations/reservation-link.mi?id=1644868069822&key=GRP&app=resvlink" target="_blank">
                         <Typography align='center' variant='body1'>or Book Here</Typography>
                     </a>
@@ -46,6 +45,13 @@ const Information = () => {
                 <a className={classes.anchorTag} href="https://www.saczoo.org/" target="_blank"><Typography align='center' variant='body1'>Sacramento Zoo</Typography>  </a>
                 <a className={classes.anchorTag} href="https://www.beersinsac.com/sacramento-brewery-directory" target="_blank"><Typography align='center' variant='body1'>Breweries</Typography>  </a>
                 <a className={classes.anchorTag} href="https://www.tripadvisor.com/Attractions-g32999-Activities-c49-Sacramento_California.html" target="_blank"><Typography align='center' variant='body1'>Musuems (crocker, Mosac, CA Museum)</Typography>   </a>
+                <Grid item>
+                    <Typography variant='h2' align='center'>Our Registration!</Typography>
+                </Grid>
+                <hr className={classes.divider} />
+                <a className={classes.anchorTag} href="https://www.amazon.com/wedding/lisa-meinschock-zachary-warner-sacramento-october-2022/registry/DKM1MPVLGC2Z" target="_blank"><Typography align='center' variant='body1'>Amazon</Typography>   </a>
+                <a className={classes.anchorTag} href="https://www.target.com/gift-registry/gift/zac-and-lisa" target="_blank"><Typography align='center' variant='body1'>Target</Typography> </a>
+                
             </Grid>
         </Grid>
     )
